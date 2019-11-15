@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "904614873379",
+    "firebase_url": "https://boteontest1.firebaseio.com",
+    "project_id": "boteontest1",
+    "storage_bucket": "boteontest1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904614873379:android:185dc122282c8c8560a496",
+        "android_client_info": {
+          "package_name": "com.boteon.testgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904614873379-2341o3c7jo3cm4qhgrbeq855id0fh793.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnby3y1tVLw11ExULfr4--Spiq9_a0hyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904614873379-2341o3c7jo3cm4qhgrbeq855id0fh793.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
