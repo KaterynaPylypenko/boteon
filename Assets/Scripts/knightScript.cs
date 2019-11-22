@@ -8,8 +8,10 @@ using SimpleFirebaseUnity.MiniJSON;
 
 public class knightScript : MonoBehaviour {
 
-	//test firebase code
 	public int health;
+	public Slider healthSlider;
+
+	//test firebase code
 	public Text score;
 	public int playerScore;
 	public string playerName;
@@ -40,7 +42,7 @@ public class knightScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		healthSlider.value = health;
 	}
 
 	void FixedUpdate () {
@@ -69,13 +71,13 @@ public class knightScript : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D collision){
 		if (null != collision) {
-			bomb bombObj = collision.gameObject.GetComponent<bomb> ();
+			bomb bombObj = collision.gameObject.GetComponentInChildren<bomb> ();
 			if (null != bombObj) {
 				bombObj.ifCollision ();
 				//decrease player health level
 				if (health > 0) {
 					//healthSlider.value = health;
-					health -= 10;
+					health -= 30;
 					Debug.Log ("Health =" + health);
 				} else {
 					//game over

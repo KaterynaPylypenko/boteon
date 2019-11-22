@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class bomb : MonoBehaviour {
 	private Animator anim;
+	private AudioSource audioSource;
 	private const string isBlowValName= "isBlowing";
 	private const int blowTimer = 1;
-
-	private bool isCollided = false;
 
 	// Use this for initialization
 	void Start () {
 		anim = this.GetComponent<Animator>();
+		audioSource = this.GetComponent<AudioSource> ();
 		Destroy (this, 5);
 	}
 	
@@ -20,7 +20,8 @@ public class bomb : MonoBehaviour {
 	}
 
 	public void ifCollision(){
-		anim.SetBool (isBlowValName, true);
+		anim.SetBool(isBlowValName, true);
+		audioSource.Play();
 		Destroy (gameObject, blowTimer);
 	}
 		
